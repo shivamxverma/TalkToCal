@@ -1,3 +1,4 @@
 .env 
 .venv
 cred.json
+.DS_Store
