@@ -1,9 +1,10 @@
 fastapi
 uvicorn
 streamlit
-langchain
 google-api-python-client
 google-auth
 google-auth-oauthlib
-genai
-python-dotenv
+langchain
+langgraph
+chromadb
+numpy
