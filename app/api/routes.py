@@ -7,6 +7,7 @@ router = APIRouter()
 
 @router.post("/appointment", response_model=AppointmentResponse)
 async def handle_appointment(request: AppointmentRequest):
+    print("Received appointment request:", request)
     state = AgentState()
     state.messages = [{"role": "user", "content": f"Intent: {request.intent}, Date: {request.date}, Time: {request.time}, Duration: {request.duration}, Description: {request.description}"}]
     state.intent = request.intent
